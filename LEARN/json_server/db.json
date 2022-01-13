@@ -1,0 +1,26 @@
+{
+  "courses": [
+    {
+      "id": 1,
+      "name": "Kiến thức cho người mới bắt đầu",
+      "description": "Kiến thức cơ bản dành cho người mới, không phân biệt bạn theo Front-end, Back-end hay Devops"
+    },
+    {
+      "id": 2,
+      "name": "Xây dựng web cơ bản với Node & ExpressJS",
+      "description": "Học Back-end với Node & ExpressJS framework, hiểu các khái niệm khi làm Back-end và xây dựng RESTful API cho trang web."
+    },
+    {
+      "name": "Xây Dựng Website với ReactJS",
+      "description": "Khóa học ReactJS từ cơ bản tới nâng cao, kết quả của khóa học này là bạn có thể làm hầu hết các dự án thường gặp với ReactJS. Cuối khóa học này bạn sẽ sở hữu một dự án giống Tiktok.com, bạn có thể tự tin đi xin việc khi nắm chắc các kiến thức được chia sẻ trong khóa học này.",
+      "id": 3
+    }
+  ],
+  "student": [
+    {
+      "name": "Đỗ Thị Thanh Thi",
+      "mssv": "181612xx",
+      "id": 1
+    }
+  ]
+}

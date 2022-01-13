@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./style.css">
+	<title>Bài 1 - Tính lương</title>
+</head>
+<body>
+	<div id="main">
+		<div class="header">
+			Giả sử bạn là kế toán cho một công ty. Bạn cần viết một chương trình để nhập lương nhân viên, tính thuế thu nhập và lương ròng (số tiền lương thực sự mà nhân viên đó nhận được). Với các thông số sau (mình chỉ đưa ra các con số này cho dễ tính toán):
+			<br>
+			30% thuế thu nhập nếu lương là 15 triệu
+			<br>
+			20% thuế thu nhập nếu lương từ 7 đến 15 triệu
+			<br>
+			10% thuế thu nhập nếu lương dưới 7 triệu
+		</div>
+
+		<div class="content">
+			<p>Nhập lương nhân viên (Triệu đồng):</p>
+			<input type="text" id="luong">
+			<button onclick='init()'>Tính</button>
+			<br>
+
+			<p>
+				Thuế thu nhập: <span id="thue"></span>
+			</p>
+
+			<p>
+				Lương ròng: <span id="luong-rong"></span>
+			</p>
+
+			<script>
+				let in_luong = document.getElementById('luong');
+				let out_thue = document.getElementById('thue');
+				let out_luongRong = document.getElementById('luong-rong');
+
+				function init(){
+					let luong = parseInt(in_luong.value);
+					let thue = 0;
+					
+					if (luong == 15) thue =luong * 30 /100;
+					else if (luong >= 7 && luong < 15) thue = luong * 20 /100;
+					else if (luong < 7) thue = luong * 10 /100;
+
+					out_thue.innerHTML = thue + "triệu VNĐ";
+					out_luongRong.innerHTML = (luong - thue) + "triệu VNĐ"
+				}
+			</script>
+		</div>
+	</div>
+
+</body>
+</html>
