@@ -117,47 +117,47 @@ fetch(cityApi)
   })
   */
 
-var usersApi = "https://jsonplaceholder.typicode.com/users",
-  commentsApi = "https://jsonplaceholder.typicode.com/comments"
+var usersApi = 'https://jsonplaceholder.typicode.com/users',
+    commentsApi = 'https://jsonplaceholder.typicode.com/comments'
 
 fetch(usersApi)
-  .then(function (response) {
-    return response.json()
-  })
-  .then(function (users) {
-    // Đã lấy ra danh sách user là users
-    var userIds = users.map(function (user) {
-      return user.id
-    })
-    // Đã lấy ra array ID là userIds
-    return fetch(commentsApi)
-      .then(function (response) {
+    .then(function (response) {
         return response.json()
-      })
-      .then(function (comments) {
-        // Đã lấy ra danh sách comment là comments
-        var comments = comments.filter(function (comment) {
-          return userIds.includes(comment.postId)
-        })
-        return {
-          userList: users,
-          commentList: comments,
-        }
-      })
-    // Đã tạo object gồm danh sách user và danh sách comment
-  })
-  .then(function (data) {
-    var html = ""
-    var commentBlock = document.getElementById("comment-block")
-    data.commentList.forEach(function (comment) {
-      var user = data.userList.find(function (user) {
-        return user.id === comment.postId
-      })
-      html += `<li>
-        <h2>${user.name}</h2>
-        <h4>${user.email}</h4>
-        <p>${comment.body}</p>
-      </li>`
     })
-    commentBlock.innerHTML = html
-  })
+    .then(function (users) {
+        // Đã lấy ra danh sách user là users
+        var userIds = users.map(function (user) {
+            return user.id
+        })
+        // Đã lấy ra array ID là userIds
+        return fetch(commentsApi)
+            .then(function (response) {
+                return response.json()
+            })
+            .then(function (comments) {
+                // Đã lấy ra danh sách comment là comments
+                var comments = comments.filter(function (comment) {
+                    return userIds.includes(comment.postId)
+                })
+                return {
+                    userList: users,
+                    commentList: comments,
+                }
+            })
+        // Đã tạo object gồm danh sách user và danh sách comment
+    })
+    .then(function (data) {
+        var html = ''
+        var commentBlock = document.getElementById('comment-block')
+        data.commentList.forEach(function (comment) {
+            var user = data.userList.find(function (user) {
+                return user.id === comment.postId
+            })
+            html += `<li>
+            <h2>${user.name}</h2>
+            <h4>${user.email}</h4>
+            <p>${comment.body}</p>
+        </li>`
+        })
+        commentBlock.innerHTML = html
+    })
