@@ -204,6 +204,18 @@ const app = {
             path: './assets/music/song26.mp3',
             image: './assets/img/song26.jpg',
         },
+        {
+            name: 'Bất phụ thế gian',
+            singer: 'A Yue Yue',
+            path: './assets/music/song27.mp3',
+            image: './assets/img/song27.jpg',
+        },
+        {
+            name: 'Thập niên nhân gian',
+            singer: 'Lão Can Ma',
+            path: './assets/music/song28.mp3',
+            image: './assets/img/song28.jpg',
+        },
     ],
 
     setConfig: function (key, value) {
