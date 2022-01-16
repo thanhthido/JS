@@ -101,24 +101,24 @@
             formGroupSelector: '.form-group',
             errorSelector: '.form-message',
             rules: [
-                // Validator.isRequired('#fullname', 'Vui lòng nhập tên đầy đủ của bạn'),
+                Validator.isRequired('#fullname', 'Vui lòng nhập tên đầy đủ của bạn'),
 
-                // Validator.isRequired('#email'),
-                // Validator.isEmail('#email'),
+                Validator.isRequired('#email'),
+                Validator.isEmail('#email'),
 
-                // Validator.isRequired('#password'),
-                // Validator.minLength('#password', 6),
+                Validator.isRequired('#password'),
+                Validator.minLength('#password', 6),
 
-                // Validator.isRequired('#password_confirmation'),
-                // Validator.isConfirmed('#password_confirmation', function (){
-                //     return document.querySelector('#form-1 #password').value
-                // }, 'Mật khẩu nhập lại không khớp'),
+                Validator.isRequired('#password_confirmation'),
+                Validator.isConfirmed('#password_confirmation', function (){
+                    return document.querySelector('#form-1 #password').value
+                }, 'Mật khẩu nhập lại không khớp'),
 
-                // Validator.isRequired('#province', 'Vui lòng chọn tỉnh/TP'),
+                Validator.isRequired('#province', 'Vui lòng chọn tỉnh/TP'),
 
-                // Validator.isRequired('input[name="gender"]'),
+                Validator.isRequired('input[name="gender"]'),
 
-                // Validator.isRequired('input[name="favorite"]'),
+                Validator.isRequired('input[name="favorite"]'),
 
                 Validator.isRequired('#avatar')
 
