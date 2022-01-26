@@ -16,6 +16,7 @@ function Validator(formSelector) {
      * - Nếu có lỗi => return `error mesage`
      * - Nếu không có lỗi => return `undefined`
      */
+
     var validatorRules = {
         required: function (value) {
             return value ? undefined : 'Vui lòng nhập trường này'
@@ -107,7 +108,7 @@ function Validator(formSelector) {
         function handleClearError(e) {
             var formGroup = getParent(e.target, '.form-group')
 
-            // Kiểm tra xem có chứa class không
+            // Kiểm tra xem có chứa class invalid không
             if (formGroup.classList.contains('invalid')) {
                 formGroup.classList.remove('invalid')
 
