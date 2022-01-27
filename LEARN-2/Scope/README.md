@@ -1,4 +1,4 @@
-# Scope - Phajm vi
+# Scope - Phạm vi
 
 -   Các loại phạm vi
     -   Global - Toàn cầu
