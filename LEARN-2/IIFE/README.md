@@ -15,3 +15,5 @@
 4. Sử dụng IIFE khi nào? -> khi muốn che dấu tên hàm, tên biến. Không muốn sd ở phạm vi bên ngoài(global)
 5. Các cách tạo ra một IIFE
 6. Ví dụ sử dụng IIFE
+
+Link page: https://thanhthido.github.io/JS/LEARN-2/IIFE/
