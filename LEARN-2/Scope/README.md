@@ -18,7 +18,7 @@
 -   Các hàm có thể truy cập các biến được khai báo trong phạm vi của nó và bên ngoài nó
 -   Cách thức một biến được truy cập
     -   Hàm bên trong sẽ truy cập được biến bên ngoài
-    -   Bên hoài sẽ khôn g truy cập được cái biến khai báo bên trong (trừ var)
+    -   Bên hoài sẽ không truy cập được cái biến khai báo bên trong (trừ var)
     -   Luôn lấy biến phạm vi gần nhất
     -   Nếu biến được khai báo sau khi sử dụng thì sẽ lỗi(const, let)
 -   Khi nào một biến được xoá khỏi bộ nhớ?
