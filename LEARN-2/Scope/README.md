@@ -28,3 +28,5 @@
         > Khi hàm, bock thực thi xong thì sẽ được xoá khỏi bộ nhớ
     -   Biến trong hàm được tham chiếu bởi 1 hàm?
         > Biến không được xoá khỏi bộ nhớ
+
+Link page: https://thanhthido.github.io/JS/LEARN-2/Scope/
