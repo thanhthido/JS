@@ -12,3 +12,5 @@
 
 -   Biến được tham chiếu (refer) trong closure sẽ không được xoá khỏi bộ nhớ khi hàm cha thực thi xong
 -   Các khái niệm JavaScript nâng cao rất dễ gây nhầm lẫn
+
+Link page: https://thanhthido.github.io/JS/LEARN-2/Closure/
