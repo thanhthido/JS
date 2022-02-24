@@ -4,11 +4,11 @@
 
 ---
 
-## Hoisting với "var", "function declaration"
+## Hoisting với `var`, `function declaration`
 
 > Phần khai báo được đưa lên, phần gán không được đưa lên
 
-### "var"
+### `var`
 
 ```js
 console.log(age) // undefined
@@ -26,7 +26,7 @@ age = 16
 console.log(age) // 16
 ```
 
-### "function declaration"
+### `function declaration`
 
 ```js
 console.log(sum(6, 9)) // 15
@@ -35,11 +35,11 @@ function sum(a, b) {
 }
 ```
 
-## Hoisting với "let", "const"
+## Hoisting với `let`, `const`
 
 > Khai báo với biến "let", "const" khi được hoisted không được tạo giá trị và được đưa vào "Temporal Dead Zone"
 
-### "let"
+### `let`
 
 ```js
 {
@@ -48,7 +48,7 @@ function sum(a, b) {
 }
 ```
 
-### "const"
+### `const`
 
 ```js
 const counter1 = makeCounter()
