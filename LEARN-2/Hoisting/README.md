@@ -43,7 +43,7 @@ function sum(a, b) {
 
 ```js
 {
-    console.log(fullName) <!-- ReferenceError: Cannot access 'fullName' before initialization -->
+    console.log(fullName) // ReferenceError: Cannot access 'fullName' before initialization
     let fullName = 'Nguyen Van A'
 }
 ```
@@ -52,12 +52,12 @@ function sum(a, b) {
 
 ```js
 const counter1 = makeCounter()
-console.log(counter1) <!-- 1 -->
+console.log(counter1) // 1
 function makeCounter() {
     let counter = 0
     return increase
     function increase() {
-    return ++counter
+        return ++counter
     }
 }
 ```
