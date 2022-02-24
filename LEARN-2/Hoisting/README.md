@@ -10,24 +10,30 @@
 
 ### "var"
 
-    console.log(age) <!-- undefined -->
-    console.log(fullName) <!-- ReferenceError: fullName is not defined -->
-    var age = 16
+```js
+console.log(age) // undefined
+console.log(fullName) // ReferenceError: fullName is not defined
+var age = 16
+```
 
     =>
 
-    var age
-    console.log(age) <!-- undefined -->
-    console.log(fullName) <!-- ReferenceError: fullName is not defined -->
-    age = 16
-    console.log(age) <!-- 16 -->
+```js
+var age
+console.log(age) // undefined
+console.log(fullName) // ReferenceError: fullName is not defined
+age = 16
+console.log(age) // 16
+```
 
 ### "function declaration"
 
-    console.log(sum(6, 9)) <!-- 15 -->
-    function sum(a, b) {
+```js
+console.log(sum(6, 9)) // 15
+function sum(a, b) {
     return a + b
-    }
+}
+```
 
 ## Hoisting với "let", "const"
 
@@ -35,21 +41,25 @@
 
 ### "let"
 
-    {
-        console.log(fullName) <!-- ReferenceError: Cannot access 'fullName' before initialization -->
-        let fullName = 'Nguyen Van A'
-    }
+```js
+{
+    console.log(fullName) <!-- ReferenceError: Cannot access 'fullName' before initialization -->
+    let fullName = 'Nguyen Van A'
+}
+```
 
 ### "const"
 
-    const counter1 = makeCounter()
-    console.log(counter1) <!-- 1 -->
-    function makeCounter() {
-        let counter = 0
-        return increase
-        function increase() {
-        return ++counter
-        }
+```js
+const counter1 = makeCounter()
+console.log(counter1) <!-- 1 -->
+function makeCounter() {
+    let counter = 0
+    return increase
+    function increase() {
+    return ++counter
     }
+}
+```
 
 Link page: https://thanhthido.github.io/JS/LEARN-2/Hoisting/
