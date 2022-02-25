@@ -11,6 +11,13 @@
     > _`<script> "use strict" </script>`_
 3. Thêm `"use strict";` vào đầu phạm vi hàm
 
+```js
+function testFunc() {
+    'use strict'
+    var age = 18 // Tạo ra biến age ở phạm vi global
+}
+```
+
 ## Đặc trưng
 
 -   Không thể khai báo biến mà không sử dụng từ khoá `var`, `let`, `const`
