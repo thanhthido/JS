@@ -125,3 +125,5 @@ console.log(private) // Lỗi: SyntaxError: Unexpected strict mode reserved word
 1. Tránh "quên" từ khoá khai báo biến
 2. Tránh trùng tên biến dẫn tới lỗi logic
 3. Sử dụng bộ nhớ hiệu quả vì tránh tạo biến global
+
+Link page: https://thanhthido.github.io/JS/LEARN-2/Strict-mode/
