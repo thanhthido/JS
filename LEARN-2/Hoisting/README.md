@@ -37,7 +37,7 @@ function sum(a, b) {
 
 ## Hoisting với `let`, `const`
 
-> Khai báo với biến "let", "const" khi được hoisted không được tạo giá trị và được đưa vào "Temporal Dead Zone"
+> Khai báo với biến `let`, `const` khi được hoisted không được tạo giá trị và được đưa vào "Temporal Dead Zone"
 
 ### `let`
 
